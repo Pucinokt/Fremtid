@@ -9,7 +9,11 @@ body {
     font-size: 10px;
     background-color: black;
     overflow-x: hidden;
+    
 
+}
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -20,7 +24,7 @@ body {
     height: 65px;
     position: fixed;
     line-height: 65px;
-    text-align: center;
+    text-align: right;
     z-index: 9999;
 }
 
@@ -475,6 +479,10 @@ body {
     padding-top: 1rem;
     width: 75%;
     align-content: center;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: .022em;
   }
   .sec-two .container .right .button {
     display: flex;
@@ -524,7 +532,8 @@ body {
   }
   @media (max-width: 1000px) {
     .sec-two .container .left {
-      width: 100%;  
+      width: 100%; 
+      margin-top: -40px; 
     }
   }
   @media (max-width: 1000px) {
@@ -536,6 +545,8 @@ body {
   @media (max-width: 1000px) {
     .sec-two .container .right {
       width: 100%;
+      padding-top: 30px;
+      padding-bottom: 60px;
      
     }
   }
@@ -587,6 +598,10 @@ body {
     padding-top: 1rem;
     width: 75%;
     align-content: center;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: .022em;
   }
   .sec-three .container .right {
     width: 50%;
@@ -636,13 +651,13 @@ body {
     .sec-three .container .right {
       width: 100%;
       height: 100%;
-      padding: 2rem;
     }
   }
 @media (max-width: 1000px) {
     .sec-three .container .left {
       width: 100%;
-      height: 22rem;
+      height: 100%;
+      padding-bottom: 60px;
     }
   }
 @media (max-width: 1300px) {
@@ -683,10 +698,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    padding-right: 30px;
+    padding-left: 30px;
     border-top: solid 2px #333;
     background: #F8F8F8;
-    height: 40vh;
-    padding-top: 40px;
+    height: 60vh;
     color: #fff;
     overflow: hidden;
     display: flex;
@@ -694,9 +710,18 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    
-   
-}
+  }
+  @media (max-width: 1000px) {
+    .PDF-content {
+      margin-top: -40px;
+    }
+  }
+
+  .quote{
+    margin-top: -20px;
+    font-size: 12px;
+    color: #000;
+  }
 .PDF-content h3{
     font-size: 3.1rem;
     font-weight: 500;
@@ -704,18 +729,18 @@ body {
     line-height: 3rem;
     color: black;
 }
-.PDF-content p{
+.PDF-content .paragraph{
     max-width: 500px;
     margin: 10px auto;
+    font-size: 17px;
     line-height: 28px;
-    font-size: 2.0rem;
     color: black;
     margin-bottom: 40px;
 }
 .PDF a {
     text-decoration: none;
     border: 1px solid #148aff;
-    color: #148aff;
+    color: black;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 20px 50px;
@@ -778,6 +803,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    margin-right: 40px;
 }
 .socials li{
     margin: 0 10px;
@@ -862,6 +888,7 @@ display: block;
 #more2{display: none;}
 #more3{display: none;}
 #more4{display: none;}
+#more5{display: none;}
 
 #toggle {
     display: none;
@@ -875,8 +902,11 @@ display: block;
 #toggle4 {
     display: none;
 }
+#toggle5 {
+    display: none;
+}
 
-.button1, .button2, .button3,.button4 {
+.button1, .button2, .button3,.button4,.button5 {
     display: inline-block;
     width: 90px;
     height: 35px;
@@ -886,7 +916,7 @@ display: block;
     cursor: pointer;
 }
 
-.button1::after, .button2::after,.button3::after,.button4::after{
+.button1::after, .button2::after,.button3::after,.button4::after,.button5::after{
     font-family: "FontAwesome";
     content: "\f067";
     /* Add in the image. You could also add an icon by the using the icon's unicode (sites like fontawesome.com provide this). */
@@ -910,7 +940,7 @@ display: block;
         transform 1s ease-in;
 }
 
-#toggle:checked+.button1::after,#toggle2:checked+.button2::after,#toggle3:checked+.button3::after,#toggle4:checked+.button4::after  {
+#toggle:checked+.button1::after,#toggle2:checked+.button2::after,#toggle3:checked+.button3::after,#toggle4:checked+.button4::after,#toggle5:checked+.button5::after  {
     font-family: "FontAwesome";
     content: "\f068";
     /* Switching the images when clicked. */

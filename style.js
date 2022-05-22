@@ -74,3 +74,18 @@ function myFunction3() {
       moreText.style.display = "inline";
     }
   }
+function myFunction4() {
+    var dots = document.getElementById("dots5");
+    var moreText = document.getElementById("more5");
+    var btnText = document.getElementById("toggle5");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Læs mere";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Læs mindre";
+      moreText.style.display = "inline";
+    }
+  }
