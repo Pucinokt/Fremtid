@@ -7,7 +7,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background-color: black;
+    background-color: #f0f0f0;
     overflow-x: hidden;
     
 
@@ -135,6 +135,7 @@ html {
     .nav div.main_list {
         width: 100%;
         height: 0;
+        margin-top: -10px;
         overflow: hidden;
     }
     .nav div.show_list {
@@ -728,6 +729,15 @@ html {
     text-transform: capitalize;
     line-height: 3rem;
     color: black;
+}
+@media (max-width: 1000px) {
+  .PDF-content h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: black;
+  }
 }
 .PDF-content .paragraph{
     max-width: 500px;
