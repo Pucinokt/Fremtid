@@ -445,22 +445,22 @@ html {
   /*  ---------------------- Home Section End -------------------------- */
 
   /*------------ Section 1 start ----------->*/   
-  .sec-two {
+  .sec-1 {
     width: 100%;
     height: 100%;
   }
-  .sec-two .container {
+  .sec-1 .container {
     display: flex;
   }
 /*------------ Video Section 1 start (VIDEO) (left)-----------*/
-  .sec-two .container .left {
+  .sec-1 .container .left {
     width: 50%;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .sec-two .container .left .media-container {
+  .sec-1 .container .left .media-container {
     padding: 0.5rem 0.9rem;
     box-shadow: 1rem;
     align-self: center;
@@ -470,18 +470,18 @@ html {
     height: auto;
   }
   @media (max-width: 1300px) {
-    .sec-two .container .left iframe {
+    .sec-1 .container .left iframe {
       width: 30rem;
     }
   }
   @media (max-width: 1000px) {
-    .sec-two .container .left {
+    .sec-1 .container .left {
       width: 100%; 
       margin-top: -40px; 
     }
   }
   @media (max-width: 400px) {
-    .sec-two .container .left iframe {
+    .sec-1 .container .left iframe {
       width: 20rem;
       height: 10rem;
     }
@@ -490,7 +490,7 @@ html {
 
 
 /*------------ Facebook til meta Section 1 start (TEXT) (Right)-----------*/
-  .sec-two .container .right {
+  .sec-1 .container .right {
     width: 50%;
     justify-self: center;
     background-color: #f0f0f0;
@@ -501,10 +501,10 @@ html {
     align-items: center;
     justify-content: center;
   }
-  .sec-two .container .right h1 {
+  .sec-1 .container .right h1 {
     font-size: 3rem;
   }
-  .sec-two .container .right p {
+  .sec-1 .container .right p {
     padding-top: 1rem;
     width: 75%;
     align-content: center;
@@ -513,7 +513,7 @@ html {
     font-weight: 400;
     letter-spacing: .022em;
   }
-  .sec-two .container .right .button {
+  .sec-1 .container .right .button {
     display: flex;
     flex-direction: column;
     margin-top: 0.75rem;
@@ -522,12 +522,12 @@ html {
     cursor: pointer;
     width: 100%;
   }
-  .sec-two .container .right .button-text {
+  .sec-1 .container .right .button-text {
     width: 100%;
     cursor: pointer;
     text-align: center;
   }
-  .sec-two .container .right .button a {
+  .sec-1 .container .right .button a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -542,7 +542,7 @@ html {
     color: #fff;
     cursor: pointer;
   }
-  .sec-two .container .right .button a:hover {
+  .sec-1 .container .right .button a:hover {
     background-color: #fff;
     border: 2px solid #148aff;
     color: #148aff;
@@ -551,19 +551,19 @@ html {
   }
  
   @media (max-width: 1300px) {
-    .sec-two .container .right h1 {
+    .sec-1 .container .right h1 {
       font-size: 2.5rem;
     }
   }
  
   @media (max-width: 1000px) {
-    .sec-two .container {
+    .sec-1 .container {
       display: flex;
       flex-direction: column;
     }
   }
   @media (max-width: 1000px) {
-    .sec-two .container .right {
+    .sec-1 .container .right {
       width: 100%;
       padding-top: 30px;
       padding-bottom: 60px;
@@ -571,7 +571,7 @@ html {
     }
   }
   @media (max-width: 400px) {
-    .sec-two .container .right h1 {
+    .sec-1 .container .right h1 {
       font-size: 1.5rem;
     }
   }
@@ -580,15 +580,15 @@ html {
 
 
   /*------------ Section 2 start -----------*/    
-  .sec-three {
+  .sec-2 {
     width: 100%;
     height: 100%;
   }
-  .sec-three .container {
+  .sec-2 .container {
     display: flex;
   }
 /*------------ Fremtidens vr Section 2 start (TEXT) (Left) -----------*/
-  .sec-three .container .left {
+  .sec-2 .container .left {
     width: 50%;
     justify-self: center;
     background-color: #f0f0f0;
@@ -601,10 +601,10 @@ html {
     justify-content: center;
   }
  
-  .sec-three .container .left h2 {
+  .sec-2 .container .left h2 {
     font-size: 3rem;
   }
-  .sec-three .container .left p {
+  .sec-2 .container .left p {
     padding-top: 1rem;
     width: 75%;
     align-content: center;
@@ -615,68 +615,68 @@ html {
   }
 
 @media (max-width: 400px) {
-    .sec-three .container .left h2 {
+    .sec-2 .container .left h2 {
       font-size: 1.5rem;
       padding-top: 2rem;
     }
   }
 @media (max-width: 400px) {
-    .sec-three .container .left p {
+    .sec-2 .container .left p {
       font-size: 1rem;
       padding-bottom: 1rem;
     }
   }
   @media (max-width: 1000px) {
-    .sec-three .container .left {
+    .sec-2 .container .left {
       width: 100%;
       height: 100%;
       padding-bottom: 60px;
     }
   }
 @media (max-width: 1300px) {
-    .sec-three .container .left h2 {
+    .sec-2 .container .left h2 {
       font-size: 2.5rem;
     }
   }
 /*------------ Fremtidens vr Section 2 end (TEXT) (Left) -----------*/
 
 /*------------ Fremtidens vr Section 2 start (IMAGE) (right) -----------*/
-.sec-three .container .right {
+.sec-2 .container .right {
   width: 50%;
   background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sec-three .container .right .the-img {
+.sec-2 .container .right .the-img {
   width: 100%;
   box-shadow: 1rem;
   align-self: center;
 }
 @media (max-width: 400px) {
-    .sec-three .container .right .the-img {
+    .sec-2 .container .right .the-img {
       width: 15rem;
     }
   }
 @media (max-width: 560px) {
-    .sec-three {
+    .sec-2 {
       margin-bottom: 4rem;
     }
   }
 @media (max-width: 1000px) {
-    .sec-three .container {
+    .sec-2 .container {
       display: flex;
       flex-direction: column-reverse;
     }
   }
 @media (max-width: 1000px) {
-    .sec-three .container .right {
+    .sec-2 .container .right {
       width: 100%;
       height: 100%;
     }
   }
 @media (max-width: 1300px) {
-    .sec-three .container .right .the-img {
+    .sec-2 .container .right .the-img {
       width: 30rem;
     }
   }
