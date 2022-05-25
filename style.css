@@ -16,9 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* NOTE: Section 1 og 2 er blevet kopieret og kaldt løbende i html. For ikke at lave for meget css til hver enkelte sektion.
+/* NOTE: Section 1 og 2 er blevet kopieret og kaldt løbende i html. For ikke at lave for meget css til hver enkelte sektion. */
 
-
+a{
+  color: #000;
+}
 /*  ---------------------- Nav Section start -------------------------- */
 
   
