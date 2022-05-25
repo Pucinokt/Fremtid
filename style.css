@@ -16,8 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* NOTE: Section 1 og 2 er blevet kopieret og kaldt løbende i html. For ikke at lave for meget css til hver enkelte sektion.
 
-  /*  ---------------------- Nav Section start -------------------------- */
+
+/*  ---------------------- Nav Section start -------------------------- */
 
   
 .nav {
@@ -442,14 +444,15 @@ html {
 
   /*  ---------------------- Home Section End -------------------------- */
 
-  /*  ---------------------- section two start -------------------------- */
-.sec-two {
+  /*------------ Section 1 start ----------->*/   
+  .sec-two {
     width: 100%;
     height: 100%;
   }
   .sec-two .container {
     display: flex;
   }
+/*------------ Video Section 1 start (VIDEO) (left)-----------*/
   .sec-two .container .left {
     width: 50%;
     background-color: #333;
@@ -466,7 +469,27 @@ html {
     width: 100%;
     height: auto;
   }
+  @media (max-width: 1300px) {
+    .sec-two .container .left iframe {
+      width: 30rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    .sec-two .container .left {
+      width: 100%; 
+      margin-top: -40px; 
+    }
+  }
+  @media (max-width: 400px) {
+    .sec-two .container .left iframe {
+      width: 20rem;
+      height: 10rem;
+    }
+  }
+/*------------ Video Section 1 end (VIDEO) (left)-----------*/
 
+
+/*------------ Facebook til meta Section 1 start (TEXT) (Right)-----------*/
   .sec-two .container .right {
     width: 50%;
     justify-self: center;
@@ -526,22 +549,13 @@ html {
     transition: all 0.1s;
     cursor: pointer;
   }
-  @media (max-width: 1300px) {
-    .sec-two .container .left iframe {
-      width: 30rem;
-    }
-  }
+ 
   @media (max-width: 1300px) {
     .sec-two .container .right h1 {
       font-size: 2.5rem;
     }
   }
-  @media (max-width: 1000px) {
-    .sec-two .container .left {
-      width: 100%; 
-      margin-top: -40px; 
-    }
-  }
+ 
   @media (max-width: 1000px) {
     .sec-two .container {
       display: flex;
@@ -557,22 +571,15 @@ html {
     }
   }
   @media (max-width: 400px) {
-    .sec-two .container .left iframe {
-      width: 20rem;
-      height: 10rem;
-    }
-  }
-  @media (max-width: 400px) {
     .sec-two .container .right h1 {
       font-size: 1.5rem;
     }
   }
-  
-  /*  ---------------------- section two end -------------------------- */
+  /*------------ Facebook til meta Section 1 end (TEXT) (Right)-----------*/
+  /*------------ Section 1 end ----------->*/      
 
 
-  /*  ---------------------- section three start -------------------------- */
-  
+  /*------------ Section 2 start -----------*/    
   .sec-three {
     width: 100%;
     height: 100%;
@@ -580,6 +587,7 @@ html {
   .sec-three .container {
     display: flex;
   }
+/*------------ Fremtidens vr Section 2 start (TEXT) (Left) -----------*/
   .sec-three .container .left {
     width: 50%;
     justify-self: center;
@@ -592,11 +600,7 @@ html {
     align-items: center;
     justify-content: center;
   }
-  .vr-future{
-      text-align: center;
-      padding-right: 30px;
-      padding-left: 30px;
-  }
+ 
   .sec-three .container .left h2 {
     font-size: 3rem;
   }
@@ -609,18 +613,6 @@ html {
     font-weight: 400;
     letter-spacing: .022em;
   }
-  .sec-three .container .right {
-    width: 50%;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-.sec-three .container .right .the-img {
-    width: 100%;
-    box-shadow: 1rem;
-    align-self: center;
-  }
 
 @media (max-width: 400px) {
     .sec-three .container .left h2 {
@@ -628,13 +620,39 @@ html {
       padding-top: 2rem;
     }
   }
-
 @media (max-width: 400px) {
     .sec-three .container .left p {
       font-size: 1rem;
       padding-bottom: 1rem;
     }
   }
+  @media (max-width: 1000px) {
+    .sec-three .container .left {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 60px;
+    }
+  }
+@media (max-width: 1300px) {
+    .sec-three .container .left h2 {
+      font-size: 2.5rem;
+    }
+  }
+/*------------ Fremtidens vr Section 2 end (TEXT) (Left) -----------*/
+
+/*------------ Fremtidens vr Section 2 start (IMAGE) (right) -----------*/
+.sec-three .container .right {
+  width: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-three .container .right .the-img {
+  width: 100%;
+  box-shadow: 1rem;
+  align-self: center;
+}
 @media (max-width: 400px) {
     .sec-three .container .right .the-img {
       width: 15rem;
@@ -651,33 +669,25 @@ html {
       flex-direction: column-reverse;
     }
   }
-
 @media (max-width: 1000px) {
     .sec-three .container .right {
       width: 100%;
       height: 100%;
     }
   }
-@media (max-width: 1000px) {
-    .sec-three .container .left {
-      width: 100%;
-      height: 100%;
-      padding-bottom: 60px;
-    }
-  }
-@media (max-width: 1300px) {
-    .sec-three .container .left h2 {
-      font-size: 2.5rem;
-    }
-  }
- 
 @media (max-width: 1300px) {
     .sec-three .container .right .the-img {
       width: 30rem;
     }
   }
+  .vr-future{
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+/*------------ Fremtidens vr Section 2 end (IMAGE) (right) -----------*/
+/*------------ Section 2 end -----------*/
 
- /*  ---------------------- section three end -------------------------- */
 
  /*  ---------------------- scroll bar start -------------------------- */
 
@@ -933,23 +943,18 @@ display: block;
 .button1::after, .button2::after,.button3::after,.button4::after,.button5::after{
     font-family: "FontAwesome";
     content: "\f067";
-    /* Add in the image. You could also add an icon by the using the icon's unicode (sites like fontawesome.com provide this). */
     width: 40px;
     height: 40px;
-    /* Making the icon slightly taller than the button container. */
     background-color: #ca6db0;
     border: 2px solid #fff;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, .25);
     position: absolute;
     top: -5px;
-    /* Since the button has a height of 35px and the ::after has 40px, we offset the difference by pushing it up by 5px to center this element vertically. */
     left: 0;
     display: grid;
-    /* Used for centering the icon image in the middle in conjunction with place content center. */
     place-content: center;
     line-height: 0;
-    /*By default this will have a line height. This means that the image will not be perfectly centered by using the properties above. To make sure we can center this image in the middle, we make the line height 0. */
     transition: background-color 1s,
         transform 1s ease-in;
 }
@@ -957,10 +962,8 @@ display: block;
 #toggle:checked+.button1::after,#toggle2:checked+.button2::after,#toggle3:checked+.button3::after,#toggle4:checked+.button4::after,#toggle5:checked+.button5::after  {
     font-family: "FontAwesome";
     content: "\f068";
-    /* Switching the images when clicked. */
     background-color: #7b82db;
     transform: translateX(50px) rotate(360deg);
-    /* Since the width of the button is 90px and the pseudo element is 40px we translate by a number that adds up to 90. So we translate to the right by 50px ( 40 + 50 = 90 width of the button). We also rotate this element by 360 degrees. */
 }
 
 /*  ---------------------- Toggle Button end (Read more) -------------------------- */
